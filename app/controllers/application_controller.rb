@@ -9,4 +9,11 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:subdomain])
   end
   
+def after_sign_in_path_for(user)
+	albums_path
+end
+def after_sign_out_path_for(user)
+	users_path
+end
+  
 end
