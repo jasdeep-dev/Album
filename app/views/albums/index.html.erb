@@ -1,0 +1,12 @@
+<div class="row">
+	<% @picture.each do |pic|%>
+		
+		<div class="col-md-4" style="border: outset;">
+		<h1><%= pic.name %></h1>
+		<br>
+		<h3><%= pic.Description %></h3>
+		<br>
+		<br>
+	</div>
+	<%end%>
+</div>

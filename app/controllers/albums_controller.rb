@@ -1,6 +1,6 @@
 class AlbumsController < ApplicationController
 	def index
-	
+		@picture = Picture.all
 	end
 	def new
 		@picture = Picture.new
@@ -20,7 +20,7 @@ class AlbumsController < ApplicationController
 
 	private
 		def active_params
-			params.require(:album).permit(:name, {image: []})
+			params.require(:album).permit(:name, :Description, {images: []})
 		end
 		def set_id
 			@picture = Picture.find(params[:id])

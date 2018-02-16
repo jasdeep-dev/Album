@@ -1,3 +1,7 @@
-show
-<%debugger%>
-<%= image_tag @picture.image_url %>
+<h1 style="text-align: center"><%= @picture.name%></h1>
+<h3 ><%= @picture.Description%></h3>
+<% @picture.images.each do |image|%>
+<div class="col-md-4">
+<%= image_tag(image.url, class: "size") %>
+</div>
+<%end%>

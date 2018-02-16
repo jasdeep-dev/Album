@@ -17,23 +17,23 @@
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-    from {background-image: url(https://static.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg);}
-    to {background-image: url(https://static.pexels.com/photos/68147/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg);}
+    from {background-image: url(https://static.pexels.com/photos/7919/pexels-photo.jpg);}
+    to {background-image: url(https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg);}
 }
 
 /* Standard syntax */
-from {background-image: url(https://static.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg);}
-    to {background-image: url(https://static.pexels.com/photos/68147/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg);}
+from {background-image: url(https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg);}
+    to {background-image: url(https://static.pexels.com/photos/7919/pexels-photo.jpg);}
 </style>
   </head>
 
   <body id="myDIV">
     
-      <div class="container>
+      <div class="container">
         <div class="row">
           <div class="table-row">
-            <div class="container-">
-            <div class="nav nav-tabs .navbar-fixed-top nav_height">
+            <div class="container">
+            <div class="nav nav-tabs navbar-fixed-top nav_height">
 
               <li>
                 <a href="#" class="nav_height">Home</a>
@@ -77,8 +77,9 @@ from {background-image: url(https://static.pexels.com/photos/36764/marguerite-da
               <%end%>
               </li>
             </div>
-          </div>
+          
         </div>
+      </div>
       </div> 
       </div>   
       <%if notice.present? %>
@@ -96,11 +97,12 @@ from {background-image: url(https://static.pexels.com/photos/36764/marguerite-da
        </nav>
      </div>
      <%end%>
-     <div class="container">
-          <br>
-          <br>
+     <br>
+     <br>
+     <div class="container" style="margin-top: 70px">
+          
           <%= yield %>
-          </div>
+    </div>
   </body>
 </html>
 
